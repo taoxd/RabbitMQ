@@ -2,6 +2,11 @@
 RabbitMQ消息中间件极速入门与实战
 
 
+慕课网学习源码
+
+
+数据库脚本
+
 CREATE TABLE `broker_message_log` (
   `message_id` varchar(255) NOT NULL COMMENT '消息唯一ID',
   `message` varchar(4000) NOT NULL COMMENT '消息内容',
