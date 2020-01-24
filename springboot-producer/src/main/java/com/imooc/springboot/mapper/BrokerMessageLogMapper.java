@@ -1,14 +1,14 @@
 package com.imooc.springboot.mapper;
 
-import java.util.Date;
-import java.util.List;
-
+import com.imooc.springboot.entity.BrokerMessageLog;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-import com.imooc.springboot.entity.BrokerMessageLog;
+import java.util.Date;
+import java.util.List;
 @Mapper
+@Repository
 public interface BrokerMessageLogMapper {
     /**
      * 查询消息状态为0(发送中) 且已经超时的消息集合

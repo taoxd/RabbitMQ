@@ -1,12 +1,17 @@
 package com.imooc.springboot.producer;
 
+import com.imooc.springboot.entity.Order;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.rabbit.support.CorrelationData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.imooc.springboot.entity.Order;
-
+/**
+* @Description:    测试发送消息
+* @Author:         taoxudong
+* @CreateDate:     2020/1/24 12:56
+* @Version:        1.0
+*/
 @Component
 public class OrderSender {
 
