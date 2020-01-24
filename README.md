@@ -2,7 +2,11 @@
 RabbitMQ消息中间件极速入门与实战
 
 
-慕课网学习源码
+producer-test
+发送一条消息
+ApplicationTests.testSend1() 
+
+consumer起服务接收一条消息
 
 
 数据库脚本
