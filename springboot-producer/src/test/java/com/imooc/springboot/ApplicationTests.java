@@ -38,7 +38,7 @@ public class ApplicationTests {
 	@Test
 	public void testCreateOrder() throws Exception {
 		Order order = new Order();
-		order.setId("2019031255");
+		order.setId("20200125");
 		order.setName("测试创建订单");
 		order.setMessageId(System.currentTimeMillis() + "$" + UUID.randomUUID().toString());
 		orderService.createOrder(order);
