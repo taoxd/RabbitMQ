@@ -82,7 +82,7 @@
   <insert id="insert" parameterType="com.imooc.springboot.entity.Order" >
     insert into t_order (id, name, message_id
       )
-    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{messageId,jdbcType=VARCHAR}
+    values (#{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{messageId,jdbcType=VARCHAR}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.imooc.springboot.entity.Order" >

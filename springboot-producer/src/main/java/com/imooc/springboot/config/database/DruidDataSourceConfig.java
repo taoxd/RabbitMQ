@@ -1,5 +1,6 @@
 package com.imooc.springboot.config.database;
 
+import com.alibaba.druid.pool.DruidDataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,8 +14,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import javax.sql.DataSource;
 import java.sql.SQLException;
 
-import com.alibaba.druid.pool.DruidDataSource;
-
+/**
+* @Description:    数据源配置，并开启事务
+* @Author:         taoxudong
+* @CreateDate:     2020/1/24 15:00
+* @Version:        1.0
+*/
 @Configuration
 @EnableTransactionManagement
 public class DruidDataSourceConfig {

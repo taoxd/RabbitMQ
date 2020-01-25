@@ -9,6 +9,12 @@ import org.springframework.scheduling.config.ScheduledTaskRegistrar;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
+/**
+ * @Description: 启动定时任务
+ * @Author: taoxudong
+ * @CreateDate: 2020/1/24 15:05
+ * @Version: 1.0
+ */
 @Configuration
 @EnableScheduling
 public class TaskSchedulerConfig implements SchedulingConfigurer {
@@ -18,8 +24,8 @@ public class TaskSchedulerConfig implements SchedulingConfigurer {
         taskRegistrar.setScheduler(taskScheduler());
     }
 
-    @Bean(destroyMethod="shutdown")
-    public Executor taskScheduler(){
+    @Bean(destroyMethod = "shutdown")
+    public Executor taskScheduler() {
         return Executors.newScheduledThreadPool(100);
     }
 

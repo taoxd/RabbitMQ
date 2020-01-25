@@ -6,7 +6,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.stereotype.Component;
-
+/**
+* @Description:    读取配置属性
+* @Author:         taoxudong
+* @CreateDate:     2020/1/24 14:58
+* @Version:        1.0
+*/
 @Component
 @ConfigurationProperties(prefix = "spring.datasource")
 @PropertySource("classpath:druid.properties")
